@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>InfoLiga</title>
+  <meta name="description" content="Info Liga"/>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <!-- Navigasi -->
+    <nav class="transparent" role="navigation">
+      <div class="nav-wrapper container-main align-center">
+        <a href="#" class="brand-logo white-text center" id="logo-container">
+            <img src="img/icon.png" alt="icon" width="25px"> 
+            <span>Info Liga</span>
+        </a>
+        <a href="./index.html#teams" class="back">
+            <img src="img/back.png" alt="">
+        </a>
+        <ul class="topnav right hide-on-med-and-down white-text"></ul>
+        <ul class="sidenav white-text" id="nav-mobile"></ul>
+      </div>
+    </nav>
+  </header>
+  <!-- content -->
+  <main class="detail standing" id="body-content"></main>
+  <!-- loader -->
+  <div id="loader"></div>
+  <!-- tombol save -->
+  <div class="fixed-action-btn">
+    <a class="btn-small red tombol" id="save">
+    <span class="large">+ Favorite</span>
+    </a>
+  </div>
+  <!-- tombol delete -->
+  <div class="fixed-delete" id="delete">
+    <a class="btn-small red tombol" href="./index.html#favorites">
+    <span class="large">Hapus</span>
+    </a>
+  </div>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/register-sw.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/idb.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/request-api.js"></script>
+  <script>
+    // register service worker
+    checkSwDetail();    
+  </script>
+</body>
+</html>

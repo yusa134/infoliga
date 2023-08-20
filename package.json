@@ -1,0 +1,15 @@
+{
+  "name": "infoliga",
+  "version": "1.0.0",
+  "description": "App info liga",
+  "main": "./index.html",
+  "dependencies": {
+    "web-push": "^3.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yusa",
+  "license": "ISC"
+}

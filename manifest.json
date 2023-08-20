@@ -1,0 +1,22 @@
+{
+    "name": "Info Liga",
+    "short_name": "ILiga",
+    "description": "Aplikasi mengenai info liga",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#3D195B",
+    "icons": [
+        {
+            "src": "img/main-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+        "gcm_sender_id": "779501550038"
+}
